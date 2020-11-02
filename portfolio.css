@@ -1,0 +1,97 @@
+html, * {
+   box-sizing: border-box; 
+   margin: 0;
+}
+
+.wrapper {
+    margin: 0vh 15.75vw 0vh 15.75vw;
+    width: 68.5vw;
+}
+nav {
+height: 5vw;
+background-color: rgb(255,255,255);
+text-align: right;
+}
+ul {
+    padding-top: 4vh;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1.5vh;
+    padding: .5vw;
+}
+.background {
+    background-color: lightgray;
+}
+.title {
+height: 14vh;
+}
+
+.heading {
+    padding-top: 3vh;
+    font-size: 6vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 33.35% 33.35% 33.35%;
+    grid-template-rows: 12% 44% 44%;
+    height: 60.5vh; 
+    width: 68.5vw;
+    background-color: white;
+    margin-bottom: 10vh;
+}
+
+.projects_banner {
+    background-color: rgb(255,255,255);
+    grid-column: span 3; 
+    text-align: center;
+    
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 25vh 25vh 25vh;
+    grid-template-rows: 50vh 50vh;
+}
+figure {
+    height: 26.7vh;
+    width: 22.9vw;
+ }
+
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ figcaption {
+    position: relative;
+    top: -13vh;
+    left: 20vh;
+    z-index: -6;
+}
+
+figure:hover {
+   background-color:rgba(59,182,194, 0.5);
+   z-index: 6;   
+}
+
+img {
+    
+    height: 26.7vh;
+    width: 22.9vw;
+}
+
+img:hover {
+    height: 26.7vh;
+    width: 22.9vw;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+footer {
+    height: 14vh;
+    background-color: black;
+}
