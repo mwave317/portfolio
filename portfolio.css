@@ -3,13 +3,20 @@ html, * {
    margin: 0;
 }
 
+.main-background {
+    background-color: rgb(205,205,205);
+}
+
+.secondary-background {
+    background-color: rgb(255,255,255);   
+}
+
 .wrapper {
     margin: 0vh 15.75vw 0vh 15.75vw;
     width: 68.5vw;
 }
 nav {
 height: 5vw;
-background-color: rgb(255,255,255);
 text-align: right;
 }
 ul {
@@ -21,9 +28,7 @@ li {
     font-size: 1.5vh;
     padding: .5vw;
 }
-.background {
-    background-color: rgb(205,205,205);
-}
+
 .title {
 height: 14vh;
 }
@@ -31,7 +36,8 @@ height: 14vh;
 .heading {
     padding-top: 3vh;
     font-size: 6vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px rgb(150,150,150);
 }
 
 .projects {
@@ -40,15 +46,16 @@ height: 14vh;
     grid-template-rows: 12% 44% 44%;
     height: 60.5vh; 
     width: 68.5vw;
-    background-color: rgb(255,255,255);
     margin-bottom: 10vh;
 }
 
 .projects_banner {
-    background-color: rgb(255,255,255);
     grid-column: span 3; 
     text-align: center;
-    
+}
+h1 {
+    font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .work {
@@ -56,10 +63,6 @@ height: 14vh;
     grid-template-columns: 25vh 25vh 25vh;
     grid-template-rows: 50vh 50vh;
 }
-figure {
-    height: 26.7vh;
-    width: 22.9vw;
- }
 
  a {
      text-decoration: none;
@@ -85,8 +88,6 @@ img {
 }
 
 img:hover {
-    height: 26.7vh;
-    width: 22.9vw;
     opacity: 0.1;
     z-index: 1;
 }
