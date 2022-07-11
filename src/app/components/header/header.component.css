@@ -1,0 +1,157 @@
+.header-wrapper {
+    background-color: #FDFDFD;
+    height: 500px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    border-top: 2px solid #FDFDFD;
+}
+
+.header-image-wrapper {
+    border: 5px solid #1A11F7;
+    width: 190px;
+    height: 275px;
+    margin-top: 20px;
+
+    order: 2;
+}
+
+.header-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 80px;
+    order: 1;
+}
+
+.header-greeting {
+    color: #B6B6B6;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.header-name {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    /* font-size: clamp(20px, 3vw, 4vh); */
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7D7D7D;
+
+
+}
+
+.header-wrapper .typing {
+    position: relative;
+}
+
+.header-wrapper .typing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FDFDFD;
+    animation: typing-effect 3s forwards 1;
+}
+
+.header-wrapper .blinking {
+    position: relative;
+}
+
+.blinking::after {
+    content: "";
+    position: absolute;
+    left: 200;
+    height: 100%;
+    width: 100%;
+    background-color: #FDFDFD;
+    animation: blinking 1s infinite;
+}
+
+img {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: -20px;
+    box-shadow: 0px 0px 0px 8px #F6F6F6;
+}
+
+@keyframes typing-effect {
+
+    100% {
+        left: 100%;
+        border-left: 2px solid #FDFDFD;
+    }
+
+    99% {
+        border-left: 2px solid #FDFDFD;
+    }
+
+    0% {
+        border-left: 2px solid #FDFDFD;
+    }
+
+}
+
+@keyframes blinking {
+    100% {
+        border-left: 2px solid #FDFDFD;
+    }
+
+    99% {
+        border-left: transparent;
+    }
+
+    50% {
+        border-left: transparent;
+    }
+
+    49% {
+        border-left: 2px solid #ffffff;
+    }
+
+    0% {
+        border-left: 2px solid #FDFDFD;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .header-wrapper {
+        background-color: #FDFDFD;
+        height: 450px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        overflow: hidden;
+        border-top: 2px solid #FDFDFD;
+    }
+
+    .header-image-wrapper {
+        border: 5px solid #1A11F7;
+        width: 190px;
+        height: 275px;
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .header-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 80px;
+        order: 2;
+    }
+}

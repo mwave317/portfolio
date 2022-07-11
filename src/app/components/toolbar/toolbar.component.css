@@ -1,0 +1,91 @@
+.toolbar-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FDFDFD;
+    height: 40px;
+    border-bottom: 2px solid #FDFDFD;
+}
+
+.toolbar-img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.toolbar-menu-items {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    list-style: none;
+    /* color: #9D876C; */
+    color: #7D7D7D;
+    font-size: clamp(16px, 1vw, 2vh);
+}
+
+li:hover {
+    color: black;
+}
+
+.closeToolbar {
+    color: #DAE0E7;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 10px 0px 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* a:hover {
+    text-decoration: none;
+    color: black;
+} */
+
+
+a:active {
+    text-decoration: none;
+}
+
+.toolbar-active-route {
+    color: black;
+}
+
+@media screen and (min-width: 1280px) {
+    .toolbar-wrapper {
+        align-items: center;
+        height: 60px;
+    }
+
+    .toolbar-img {
+        display: none;
+    }
+
+    ul {
+        margin-top: 0px;
+    }
+
+    li {
+        display: block;
+    }
+
+    .closeToolbar {
+        display: none;
+    }
+}

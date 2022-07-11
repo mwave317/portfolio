@@ -1,0 +1,13 @@
+<div class="header-wrapper">
+    <div class="header-image-wrapper">
+        <img loading="lazy" src="../../../assets//images/ken.jpeg" />
+    </div>
+    <div class="header-text-wrapper">
+        <p class="header-greeting">Hello</p>
+        <p class="header-name typing">I'm Ken Coppola.</p>
+        <p *ngIf="position" [ngClass]="blink ? 'header-title typing' : 'header-title blinking' ">Web Developer</p>
+
+    </div>
+
+
+</div>

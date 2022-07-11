@@ -1,0 +1,20 @@
+<div class="toolbar-wrapper">
+    <img *ngIf="!showToolbar" (click)="onShowToolbar()" class="toolbar-img" src="../../assets/icons/hamburger1.svg" />
+    <div *ngIf="showToolbar" class="toolbar-menu-items">
+        <ul>
+            <a routerLink="/">
+                <li routerLinkActive="toolbar-active-route" [routerLinkActiveOptions]="{ exact: true }">ABOUT</li>
+            </a>
+            <a routerLink="experience">
+                <li routerLinkActive="toolbar-active-route">EXPERIENCE</li>
+            </a>
+            <a routerLink="portfolio">
+                <li routerLinkActive="toolbar-active-route">PORTFOLIO</li>
+            </a>
+            <a routerLink="skills">
+                <li routerLinkActive="toolbar-active-route">SKILLS</li>
+            </a>
+        </ul>
+        <span class="closeToolbar" (click)="onShowToolbar()">X</span>
+    </div>
+</div>
